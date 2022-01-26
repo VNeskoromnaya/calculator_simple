@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/img/icon.png">
+    <link rel="stylesheet" href="/assets/style.css">
+    <title>Сalculator_Simple</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h4>Инструкция пользования</h4>
+        <p class="text">
+            Чтоб произвести математические операции (сложение <b>+</b>, вычитание <b>-</b>, умножение <b>*</b>, деление <b>/</b>) двух чисел, Вам следует <b>сначала</b> внести числа в соответствующие поля, а после - выбрать соответствующее математическое действие с ними и получить результат.
+        </p>
+            <input type="number" placeholder="Введите первое число" id="num1" class="input" />
+            <div class=action>
+                <button class="mathOperation" onclick="addition()">
+                    <img class="icon" src="assets/img/plus.png" alt="plus" />
+                </button>
+                <button class="mathOperation" onclick="subtraction()">
+                    <img class="icon" src="assets/img/minus.png" alt="minus" />
+                </button>
+                <button class="mathOperation" onclick="multiplication()"> 
+                    <img class="icon" src="assets/img/multiplication.png" alt="multiplication" />
+                </button>
+                <button class="mathOperation" onclick="division()">
+                    <img class="icon" src="assets/img/division.png" alt="division" />
+                </button>
+            </div>
+            <input type="number" placeholder="Введите второе число" id="num2" class="input"/>
+            <div class="total">
+                <h3>Ответ:</h3>
+            <input type="number" class="total" id="total" value="0" readonly>
+            </div>
+            <div>
+
+            </div>
+        </div>
+
+        
+    <script src="assets/main.js"></script>
+</body>
+</html>
