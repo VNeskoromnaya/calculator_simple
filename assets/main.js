@@ -7,29 +7,38 @@ let total;
 
 const addition = () => {
     let total = Number(num1Input.value) + Number(num2Input.value);
+    document.getElementById('total_error').style.display = 'none';
+    totalIntup.value = total;
     document.getElementById('num1').value = "";
     document.getElementById('num2').value = "";
-    totalIntup.value = total;
 }
 
 const subtraction = () => {
     let total = Number(num1Input.value) - Number(num2Input.value);
+    document.getElementById('total_error').style.display = 'none';
+    totalIntup.value = total;
     document.getElementById('num1').value = "";
     document.getElementById('num2').value = "";
-    totalIntup.value = total;
 }
 
 const multiplication = () => {
     let total = Number(num1Input.value) * Number(num2Input.value);
+    document.getElementById('total_error').style.display = 'none';
+    totalIntup.value = total;
     document.getElementById('num1').value = "";
     document.getElementById('num2').value = "";
-    totalIntup.value = total;
 }
 
 const division = () => {
     let total = Number(num1Input.value) / Number(num2Input.value);
+    if(Number(num2Input.value) == '0') {
+    totalIntup.value = 'Error!';
+    document.getElementById('total_error').style.display = 'block';
+    }
+    else {
+        totalIntup.value = total;
+        document.getElementById('total_error').style.display = 'none';
+    }
     document.getElementById('num1').value = "";
     document.getElementById('num2').value = "";
-    totalIntup.value = total;
-    console.log(totalIntup.value);
 }

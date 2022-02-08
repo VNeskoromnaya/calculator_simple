@@ -12,6 +12,7 @@ body {
     margin: 150px auto 0 auto;
     background: rgb(148, 179, 211);
     padding-top: 10px;
+    padding-bottom: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -58,21 +59,34 @@ body {
     width: 75%;
 }
 
-.total {
+.total_wrapper {
     width: 28%;
     display: flex;
     flex-direction: row;
     align-items: baseline;
 }
 
-.total h3 {
+.total_wrapper h3 {
     margin-right: 15px;
 }
 
-.total input {
+.total_wrapper .total {
     background-color: transparent;
     border: none;
     width: 50%;
     font-size: 18px;
     padding-left: 10px;
+}
+
+.total_error {
+    display: none;
+    width: 30%;
+    height: 6%;
+    border: none;
+    background: #f0bebb;
+    color: red;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 600;
+
 }
