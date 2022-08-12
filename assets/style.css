@@ -2,7 +2,7 @@ html,
 body {
     margin: 0;
     background: rgb(108, 162, 194);
-    background-image: url("/assets/img/backgraund.jpeg");
+    background-image: url("./img/backgraund.jpeg");
 
 }
 
